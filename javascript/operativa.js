@@ -1,21 +1,20 @@
 "use strict"
 
 
+
 //funcion para añadir sonidos
 function makeSound(id) {
-
     var audio = document.getElementById(id);
     audio.play();
-
 }
 
 
 //Funcion Random, decapitar y eliminar almacenar nombres
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+const deadList = []; //creo un array donde se van a almacenar los nombres q ya han salido y seran eliminados
 
 function DeadBodies(random) {
     let removed = arrayNames.splice(random, 1);
@@ -39,18 +38,21 @@ function showDoomed() {
     let random = getRandomInt(arrayNames.length) //random es un número
     console.log(random);
 
+    while (arrayNames.length > 0){
     let chosenName = arrayNames[random]; //el nombre escogido será el q ocupa ese numero (posicion) en el array
+
     makeSound("cuchilla");
     makeSound("scream");
 
-    document.getElementById("elegido").innerHTML = chosenName; //le decimos q muestre el eliminado en la pantalla
-    document.getElementById("eliminados").innerHTML = DeadBodies(random);
-
-    // if (arrayNames.length == 0) {
-    //     alert("No hay mas nombres")
-    // }
-
-
+    document.getElementById("elegido").innerHTML = chosenName; //le decimos q muestre el elegido
+    /*document.getElementById("eliminados").innerHTML = DeadBodies(random); 
+    Mostrar lista de eliminados*/
 }
 
-const deadList = []; //creo un array donde se van a almacenar los nombres q ya han salido y seran eliminados
+alert("No hay mas nombres para mostrar presiona añade nombres o presiona reiniciar")        
+document.getElementById("elegido").innerHTML = "Oops! es momento de reiniciar"
+        
+    }
+
+
+
