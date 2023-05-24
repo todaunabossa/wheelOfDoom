@@ -1,4 +1,4 @@
-1. [General Info](#collaboration) 
+🕯️ [General Info](#collaboration) 
 
 6. [Technologies](#faqs)
 
