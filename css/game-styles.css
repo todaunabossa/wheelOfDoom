@@ -12,6 +12,7 @@
     margin: auto;
     width: 90%;
     position: relative; 
+    overflow: hidden;
 }
 
 .guillotine-img{
@@ -21,17 +22,17 @@
 }
 
 .guillotine-game {
-    width: 70%;
+    width: 80%;
     height: 100%;
     position: absolute;
     top: 0%;
-    left: 15%;
+    left: 10%;
     justify-content: center;
     
 }
 
 .decapitate{
-    margin-top: 20px;
+    margin-top: 100px;
     width: 120px;
     height: 120px;
     font-size: 2rem;
@@ -39,27 +40,50 @@
     background-color: var(--true-blod);
     color: var(--white);
     border-radius: 50%;
+    z-index: 6;
     
     
 }
+
+.blade{
+position: absolute;
+width: 100%;
+left: 0%;
+top: 0%;
+z-index: 0;
+
+}
+
 
 
 h2{
 width: 100%;
 font-size: 3rem;
 position: absolute;
-top: 200px;
+top: 250px;
 
 }
 
 
 .head{
     position:absolute;
-    width: 40%;
-    top: 390px;
-    left: 75px;
+    width: 30%;
+    top: 400px;
+    left: 95px;
+    display: none;
 
 }
+
+.dead-head{
+    position:absolute;
+    width: 40%;
+    top: 440px;
+    left: 190px;
+    z-index: 4;
+    
+
+}
+
 
 footer{
     width: 100%;
