@@ -1,7 +1,7 @@
 # wheelOfDoom
 ***************
 
-1.🕯️ [General Info]
+1.🕯️ [General Info] (#General Info)
       WheelOfDone it's a fair and random Coders sacrifice online game.
 3.🛠️ [Technologies]
       HTML, Css y Javascript.
