@@ -6,40 +6,61 @@
     --wood: #9F4B37;
     --white: #FFFFFF;
 }
+
+
+.guillotine {
+    margin: auto;
+    width: 90%;
+    position: relative; 
+}
+
+.guillotine-img{
+    width: 100%;
+    position: relative;
+    
+}
+
+.guillotine-game {
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    justify-content: center;
+    
+}
+
 .decapitate{
-    width: 30vw;
-    height: 30vw;
-    font-size: 6vw;
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
     border: none;
     background-color: var(--true-blod);
     color: var(--white);
     border-radius: 50%;
-    position: absolute;
-    left: 11vw;
-}
-
-.guillotine-game {
-    width: 70vw;
-    height: 30vh;
-    position: absolute;
-    top: 5%;
-    left: 15vw;
+    
     
 }
 
+
 h2{
+width: 100%;
 font-size: 3rem;
 position: absolute;
-top: 15rem;
-left: 5vw;
+top: 180px;
 
 }
 
+footer{
+    width: 100%;
+    
+}
 
 .edit, .restart{
     margin-top: 1rem;
-    padding: 1vh 6vw;
+    padding: 0.5rem 2.5rem;
     font-size: 1.5rem;
+    margin: 0.4rem;
 }
 
 .prueba{

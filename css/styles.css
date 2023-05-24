@@ -21,8 +21,7 @@ body{
   height: 667px;
   background-color: var(--bg-color);
   text-align: center;
-  
-    
+     
 }
 
 header{
@@ -32,28 +31,21 @@ header{
 }
 
 
-
 .guillotine {
+    margin: auto;
     width: 90%;
     position: relative;
-    left: 5vw;
-    right: 0;
+    
     
 }
 
-.guillotine-base{
+.guillotine-img{
     width: 100%;
     position: relative;
     
 }
 
-.decapitate {
-    width: 70%;
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    
-}
+
 
 .guillotine-text {
     width: 70%;
