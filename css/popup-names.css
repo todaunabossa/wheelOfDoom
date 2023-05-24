@@ -37,8 +37,8 @@ button {
 }
 
 .close {
-    color: #aaa;
-    float: up;
+    color: #6c6b6b;
+    justify-content: left;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -51,19 +51,25 @@ button {
     cursor: pointer;
 }
 
+.name-card{
+font-size: 1.5rem;
+}
+
 input[type="text"] {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 button#addNameBtn {
-    border-radius: 50% ;
+    font-size: 1.5rem;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
@@ -87,7 +93,11 @@ button#addNameBtn:hover {
 }
 
 .name-card .delete-btn {
-    background-color: #ff0000;
+    background-color: var(--true-blod);
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     color: white;
     border: none;
     padding: 5px 10px;

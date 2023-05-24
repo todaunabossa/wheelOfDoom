@@ -22,15 +22,16 @@
 
 .guillotine-game {
     width: 70%;
-    height: 40%;
+    height: 100%;
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 15%;
     justify-content: center;
     
 }
 
 .decapitate{
+    margin-top: 20px;
     width: 120px;
     height: 120px;
     font-size: 2rem;
@@ -47,7 +48,16 @@ h2{
 width: 100%;
 font-size: 3rem;
 position: absolute;
-top: 180px;
+top: 200px;
+
+}
+
+
+.head{
+    position:absolute;
+    width: 40%;
+    top: 390px;
+    left: 75px;
 
 }
 
