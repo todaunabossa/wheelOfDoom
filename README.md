@@ -9,4 +9,5 @@
       No installation needed.
       
 5. [Collaboration](#collaboration)
-6. [FAQs](#faqs)
+      HTML, Css y Javascript.
+7. [FAQs](#faqs)
