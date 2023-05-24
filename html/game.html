@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decapitator wheel of doom</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/popup-names.css">
+    <link rel="stylesheet" href="/css/game-styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+
+        <section class="guillotine">
+
+            <img class="guillotine-base" src="/img/guillotine.svg" alt="guillotina estatica">
+            <div class="guillotine-game">
+                <button onclick="showDoomed()" class="decapitate">Decapitar</button>
+                <h2 id="elegido">Sacrificalos</h2>
+            </div>
+
+
+        </section>
+    </main>
+    <!-- <div class="container"> -->
+    <!--Boton del modal + -->
+    <!-- <button id="openModalBtn">Editar Lista</button>
+</div> -->
+
+    <!---Modal-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- <h2>Condenad@s/Doomed</h2> -->
+            <div id="nameContainer"></div>
+            <input type="text" id="newNameInput" placeholder="Añade un condenad@">
+            <button id="addNameBtn">+</button>
+        </div>
+    </div>
+
+    <footer>
+        <button class="edit" id="openModalBtn">Editar Lista</button>
+        <!-- <button id="openModalBtn" class="edit">Editar lista de condenados</button> -->
+        <button class="restart">Reiniciar</button>
+    </footer>
+
+    <div class="prueba">
+
+        <!-- <button onclick="showDoomed()">Decapitar!</button> -->
+
+
+        <!-- <h2>ELEGID@:<span id="elegido"></span></h2>
+<br> -->
+        <!-- <h2>ELIMNAD@S:<span id="eliminados"></span></h2>
+</div> -->
+
+        <script src="/javascript/arrayNames.js"></script>
+        <script src="/javascript/operativa.js"></script>
+        <script src="/javascript/modal.js"></script>
+
+</body>
+
+</html>

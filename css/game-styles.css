@@ -1,0 +1,49 @@
+
+:root {
+    --bg-color: #FAE5D0;
+    --black: #000000;
+    --true-blod: #FF0000;
+    --wood: #9F4B37;
+    --white: #FFFFFF;
+}
+.decapitate{
+    width: 30vw;
+    height: 30vw;
+    font-size: 6vw;
+    border: none;
+    background-color: var(--true-blod);
+    color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    left: 11vw;
+}
+
+.guillotine-game {
+    width: 70vw;
+    height: 30vh;
+    position: absolute;
+    top: 5%;
+    left: 15vw;
+    
+}
+
+h2{
+font-size: 3rem;
+position: absolute;
+top: 15rem;
+left: 5vw;
+
+}
+
+
+.edit, .restart{
+    margin-top: 1rem;
+    padding: 1vh 6vw;
+    font-size: 1.5rem;
+}
+
+.prueba{
+    width: 60%;
+    position: absolute;
+  
+}

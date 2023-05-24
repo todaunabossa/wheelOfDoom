@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+:root {
+    --bg-color: #FAE5D0;
+    --black: #000000;
+    --true-blod: #FF0000;
+    --wood: #9F4B37;
+    --white: #FFFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jolly Lodger', cursive;
+}
+
+body{
+  width: 375px;
+  height: 667px;
+  background-color: var(--bg-color);
+  text-align: center;
+  
+    
+}
+
+header{
+    width: 100vw;
+    background-color: var(--wood);
+    height: 6vh;
+}
+
+
+
+.guillotine {
+    width: 90%;
+    position: relative;
+    left: 5vw;
+    right: 0;
+    
+}
+
+.guillotine-base{
+    width: 100%;
+    position: relative;
+    
+}
+
+.decapitate {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+}
+
+.guillotine-text {
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    
+}
+
+.logo{
+    width: 80%;
+}
+
+.play{
+    margin-top: 1rem;
+    padding: 1vh 6vw;
+    font-size: 1.5rem;
+}
+
+.footer{
+width: 100vw;
+}
+
+.copyright{
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1rem;
+    text-align: center;
+}
