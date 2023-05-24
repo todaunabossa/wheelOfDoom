@@ -1,5 +1,9 @@
+1. [General Info](#collaboration) 
 
-      
-(#collaboration)
-      HTML, Css y Javascript.
-(#faqs)
+6. [Technologies](#faqs)
+
+
+
+
+5. [Collaboration](#collaboration)
+6. [FAQs](#faqs)
