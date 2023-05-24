@@ -37,8 +37,6 @@ function showDoomed() {
 
     let random = getRandomInt(arrayNames.length) //random es un número
     console.log(random);
-
-    while (arrayNames.length > 0){
     let chosenName = arrayNames[random]; //el nombre escogido será el q ocupa ese numero (posicion) en el array
 
     makeSound("cuchilla");
@@ -47,12 +45,10 @@ function showDoomed() {
     document.getElementById("elegido").innerHTML = chosenName; //le decimos q muestre el elegido
     /*document.getElementById("eliminados").innerHTML = DeadBodies(random); 
     Mostrar lista de eliminados*/
-}
 
-alert("No hay mas nombres para mostrar presiona añade nombres o presiona reiniciar")        
-document.getElementById("elegido").innerHTML = "Oops! es momento de reiniciar"
-        
+    if (arrayNames.length == 0) {
+        alert("No hay mas nombres para mostrar presiona añade nombres o presiona reiniciar")
+        document.getElementById("elegido").innerHTML = "Oops! es momento de reiniciar"
     }
 
-
-
+}
