@@ -45,11 +45,12 @@
     
 }
 
-.blade{
+.blade, #cuchilla{
 position: absolute;
 width: 100%;
 left: 0%;
 top: -80%;
+z-index: 4;
 
 
 
@@ -71,6 +72,7 @@ top: 250px;
     width: 30%;
     top: 400px;
     left: 95px;
+    
   
 
 }
@@ -82,6 +84,8 @@ top: 250px;
     left: 190px;
     z-index: 4;
     display: none;
+    
+   
     
 
 }

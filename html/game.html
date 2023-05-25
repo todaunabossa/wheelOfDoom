@@ -13,7 +13,9 @@
 
 <body>
 
-    <header></header>
+    <header>
+        <!-- <button id="try1" onclick="hacerMovimiento()">Prueba guillotina</button> -->
+    </header>
 
     <main>
 
@@ -22,14 +24,18 @@
 
             <img class="guillotine-img" src="/img/guillotine.svg" alt="guillotina estatica">
             <div class="guillotine-game">
-                <img class="blade" src="/img/guillotine-blade.svg" alt="Cuchilla de la guillotina para cortar cabezas">
-                <button onclick="showDoomed()" class="decapitate">Decapitar</button>
+                <img id="cuchilla" class="blade" src="/img/guillotine-blade.svg" alt="Cuchilla de la guillotina para cortar cabezas">
+                <button onclick="hacerMovimiento()" class="decapitate">Decapitar</button>
                 <h2 id="elegido">Sacrificalos</h2>
                 <img class="head" src="/img/head.svg" alt="Cabeza lista para que la corte la guillotina">
-                <img class="dead-head" src="/img/dead-head.svg" alt="Cabeza con sangre después de que la cortara la guillotina">
+                <img class="dead-head" src="/img/dead-head.svg"
+                    alt="Cabeza con sangre después de que la cortara la guillotina">
             </div>
-            
 
+            <audio id="hojilla">
+                <source src="/sounds/guillotine.mp3" type="audio/wav"> </audio>
+            <audio id="scream">
+                <source src="/sounds/scream.mp3" type="audio/wav"> </audio>
 
         </section>
     </main>
@@ -67,6 +73,7 @@
         <script src="/javascript/arrayNames.js"></script>
         <script src="/javascript/operativa.js"></script>
         <script src="/javascript/modal.js"></script>
+        <script src="/javascript/animation.js"></script>
 
 </body>
 

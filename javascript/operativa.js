@@ -8,6 +8,10 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+function makeSound(id) {
+    var audio = document.getElementById(id);
+    audio.play();
+}
 
 function DeadBodies(random) {
     let removed = arrayNames.splice(random, 1);
@@ -32,6 +36,9 @@ function showDoomed() {
     console.log(random);
 
     let chosenName = arrayNames[random]; //el nombre escogido será el q ocupa ese numero (posicion) en el array
+    
+    
+    makeSound("scream"); 
 
     document.getElementById("elegido").innerHTML = chosenName; //le decimos q muestre el eliminado en la pantalla
     document.getElementById("eliminados").innerHTML = DeadBodies(random);
@@ -44,3 +51,19 @@ function showDoomed() {
 }
 
 const deadList = []; //creo un array donde se van a almacenar los nombres q ya han salido y seran eliminados
+
+function hacerMovimiento() {
+
+    setTimeout(function() {
+    var blade = document.getElementById("cuchilla");
+    blade.style.top = "0%";
+  
+      var head = document.getElementsByClassName("dead-head")[0];
+      head.style.display = "block";
+      makeSound("hojilla");
+      
+    }, 2000); // 2000 milisegundos = 3 segundos
+   
+    showDoomed(); 
+    
+}
