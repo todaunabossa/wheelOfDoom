@@ -45,7 +45,7 @@
     
 }
 
-.blade, #cuchilla{
+#img-blade{
 position: absolute;
 width: 100%;
 left: 0%;
@@ -72,8 +72,6 @@ top: 250px;
     width: 30%;
     top: 400px;
     left: 95px;
-    
-  
 
 }
 
@@ -84,9 +82,6 @@ top: 250px;
     left: 190px;
     z-index: 1;
     display: none;
-    
-   
-    
 
 }
 
@@ -97,14 +92,7 @@ footer{
 }
 
 .edit, .restart{
-    margin-top: 1rem;
     padding: 0.5rem 2.5rem;
     font-size: 1.5rem;
-    margin: 0.4rem;
-}
-
-.prueba{
-    width: 60%;
-    position: absolute;
-  
+    margin: 1rem 0.7rem;
 }

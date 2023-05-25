@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decapitator wheel of doom</title>
+    <title>Wheel Of Doom | Decapitator</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/game-styles.css">
     <link rel="stylesheet" href="/css/popup-names.css">
@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <!-- <button id="try1" onclick="hacerMovimiento()">Prueba guillotina</button> -->
+        
     </header>
 
     <main>
@@ -22,36 +22,31 @@
 
         <section class="guillotine">
 
-            <img class="guillotine-img" src="/img/guillotine.svg" alt="guillotina estatica">
+            <img class="guillotine-img" src="/img/guillotine.svg" alt="Ilustración de Guillotina de Madera">
             <div class="guillotine-game">
-                <img id="cuchilla" class="blade" src="/img/guillotine-blade.svg" alt="Cuchilla de la guillotina para cortar cabezas">
-                <button onclick="hacerMovimiento()" class="decapitate">Decapitar</button>
-                <h2 id="elegido">Sacrificalos</h2>
+                <img id="img-blade" src="/img/guillotine-blade.svg" alt="Ilustración cuchilla de la guillotina para cortar cabezas">
+                <button onclick="startDecapitator()" class="decapitate">Decapitar</button>
+                <h2 id="chosed-one">Sacrificalos</h2>
                 <img class="head" src="/img/head.svg" alt="Cabeza lista para que la corte la guillotina">
                 <img class="dead-head" src="/img/dead-head.svg"
                     alt="Cabeza con sangre después de que la cortara la guillotina">
             </div>
 
-            <audio id="hojilla">
+            <audio id="blade-sound">
                 <source src="/sounds/guillotine.mp3" type="audio/wav"> </audio>
             <audio id="scream">
                 <source src="/sounds/scream.mp3" type="audio/wav"> </audio>
 
         </section>
     </main>
-    <!-- <div class="container"> -->
-    <!--Boton del modal + -->
-    <!-- <button id="openModalBtn">Editar Lista</button>
-</div> -->
-
-    <!---Modal-->
+    
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <!-- <h2>Condenad@s/Doomed</h2> -->
+           
             <div id="nameContainer"></div>
             <input type="text" id="newNameInput" placeholder="Esribe un nombre">
-            <button id="addNameBtn">Añade a tu victima +</button>
+            <button id="addNameBtn">Añade a tu víctima +</button>
         </div>
     </div>
 
@@ -60,15 +55,9 @@
         <button class="restart">Reiniciar</button>
     </footer>
 
-    <div class="prueba">
+    
 
-        <!-- <button onclick="showDoomed()">Decapitar!</button> -->
-
-
-        <!-- <h2>ELEGID@:<span id="elegido"></span></h2>
-<br> -->
-        <!-- <h2>ELIMNAD@S:<span id="eliminados"></span></h2>
-</div> -->
+        
 
         <script src="/javascript/arrayNames.js"></script>
         <script src="/javascript/operativa.js"></script>
