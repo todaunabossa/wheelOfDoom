@@ -1,6 +1,6 @@
 
 :root {
-    --bg-color: #FAE5D0;
+    --bg-color: #FFF0E0;
     --black: #000000;
     --true-blod: #FF0000;
     --wood: #9F4B37;
@@ -49,8 +49,9 @@
 position: absolute;
 width: 100%;
 left: 0%;
-top: 0%;
-z-index: 0;
+top: -80%;
+
+
 
 }
 
@@ -70,7 +71,7 @@ top: 250px;
     width: 30%;
     top: 400px;
     left: 95px;
-    display: none;
+  
 
 }
 
@@ -80,6 +81,7 @@ top: 250px;
     top: 440px;
     left: 190px;
     z-index: 4;
+    display: none;
     
 
 }
