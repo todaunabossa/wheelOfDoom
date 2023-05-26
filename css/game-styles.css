@@ -32,9 +32,9 @@
 }
 
 .decapitate{
-    margin-top: 100px;
-    width: 120px;
-    height: 120px;
+    margin-top: 40%;
+    width: 8rem;
+    height: 8rem;
     font-size: 2rem;
     border: none;
     background-color: var(--true-blod);
@@ -62,7 +62,7 @@ h2{
 width: 100%;
 font-size: 3rem;
 position: absolute;
-top: 250px;
+top: 50%;
 
 }
 
@@ -70,16 +70,16 @@ top: 250px;
 .head{
     position:absolute;
     width: 30%;
-    top: 400px;
-    left: 95px;
+    top: 76%;
+    left: 35%;
 
 }
 
 .dead-head{
     position:absolute;
     width: 40%;
-    top: 440px;
-    left: 190px;
+    top: 83%;
+    left: 70%;
     z-index: 1;
     display: none;
 

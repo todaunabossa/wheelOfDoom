@@ -1,11 +1,11 @@
 'use strict'
 
-var openModalBtn = document.getElementById("openModalBtn");
-var modal = document.getElementById("modal");
-var closeModal = document.getElementsByClassName("close")[0];
-var nameContainer = document.getElementById("nameContainer");
-var newNameInput = document.getElementById("newNameInput");
-var addNameBtn = document.getElementById("addNameBtn");
+let openModalBtn = document.getElementById("openModalBtn");
+let modal = document.getElementById("modal");
+let closeModal = document.getElementsByClassName("close")[0];
+let nameContainer = document.getElementById("nameContainer");
+let newNameInput = document.getElementById("newNameInput");
+let addNameBtn = document.getElementById("addNameBtn");
 
 
 function openModal() {
@@ -19,14 +19,14 @@ function hideModal() {
 
 function displayNames() {
     nameContainer.innerHTML = "";
-    for (var i = 0; i < arrayNames.length; i++) {
-        var nameCard = document.createElement("div");
+    for (let i = 0; i < arrayNames.length; i++) {
+        let nameCard = document.createElement("div");
         nameCard.classList.add("name-card");
 
-        var nameText = document.createElement("span");
+        let nameText = document.createElement("span");
         nameText.innerText = arrayNames[i];
 
-        var deleteBtn = document.createElement("button");
+        let deleteBtn = document.createElement("button");
         deleteBtn.classList.add("delete-btn");
         deleteBtn.innerText = "x";
         deleteBtn.setAttribute("data-index", i);
@@ -57,7 +57,7 @@ closeModal.addEventListener("click", hideModal);
 addNameBtn.addEventListener("click", addName);
 nameContainer.addEventListener("click", function(event) {
     if (event.target.classList.contains("delete-btn")) {
-        var index = event.target.getAttribute("data-index");
+        let index = event.target.getAttribute("data-index");
         deleteName(index);
     }
 });

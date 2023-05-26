@@ -17,8 +17,8 @@
 }
 
 body{
-  width: 375px;
-  height: 667px;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bg-color);
   text-align: center;
      
@@ -51,7 +51,7 @@ header{
     width: 70%;
     height: 30%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 15%;
     
 }
@@ -60,6 +60,10 @@ header{
     width: 80%;
 }
 
+p{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+}
 .play{
     margin-top: 1rem;
     padding: 1vh 6vw;
@@ -71,8 +75,8 @@ width: 100vw;
 }
 
 .copyright{
-    width: 80%;
-    margin: 2rem auto;
-    font-size: 1rem;
+    width: 90%;
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
     text-align: center;
 }

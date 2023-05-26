@@ -39,17 +39,17 @@ const deadList = [];
 function startDecapitator() {
 
     setTimeout(function () {
-        var blade = document.getElementById("img-blade");
+        let blade = document.getElementById("img-blade");
         blade.style.top = "0%";
 
-        var head = document.getElementsByClassName("dead-head")[0];
+        let head = document.getElementsByClassName("dead-head")[0];
         head.style.display = "block";
         makeSound("blade-sound");
 
         setTimeout(function () {
             blade.style.top = "-80%";
 
-            var newHead = document.getElementsByClassName("dead-head")[0];
+            let newHead = document.getElementsByClassName("dead-head")[0];
             newHead.style.display = "none";
 
         }, 3000);
