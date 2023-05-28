@@ -30,8 +30,6 @@ function showDoomed() {
 
     document.getElementById("chosed-one").innerHTML = chosenName;
     document.getElementById("dead-people").innerHTML = DeadBodies(random);
-
-
 }
 
 const deadList = [];

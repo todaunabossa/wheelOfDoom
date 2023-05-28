@@ -6,6 +6,8 @@ let closeModal = document.getElementsByClassName("close")[0];
 let nameContainer = document.getElementById("nameContainer");
 let newNameInput = document.getElementById("newNameInput");
 let addNameBtn = document.getElementById("addNameBtn");
+let startagain = document.getElementById("restartgame");
+
 
 
 function openModal() {
@@ -59,5 +61,15 @@ nameContainer.addEventListener("click", function(event) {
     if (event.target.classList.contains("delete-btn")) {
         let index = event.target.getAttribute("data-index");
         deleteName(index);
-    }
+    } 
+});
+
+restartgame.addEventListener("click", openModal);
+closeModal.addEventListener("click", hideModal);
+addNameBtn.addEventListener("click", addName);
+nameContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("delete-btn")) {
+        let index = event.target.getAttribute("data-index");
+        deleteName(index);
+    } 
 });

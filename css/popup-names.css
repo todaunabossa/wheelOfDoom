@@ -38,11 +38,13 @@ button {
 }
 
 .close {
-    color: #6c6b6b;
-    justify-content: left;
-    font-size: 28px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: right;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
+
 }
 
 .close:hover,
