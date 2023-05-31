@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url(/css/popup-names.css);
+@import url(/css/game-styles.css);
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     --bg-color: #FFF0E0;
@@ -17,7 +19,7 @@
 }
 
 body{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
   text-align: center;
@@ -25,16 +27,17 @@ body{
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     background-color: var(--wood);
-    height: 6vh;
+    height: 80px;
 }
 
 
 .guillotine {
-    margin: auto;
+    margin: 0 auto 0.4rem;
     width: 90%;
     position: relative;
+    overflow: hidden;
     
     
 }
@@ -49,34 +52,52 @@ header{
 
 .guillotine-text {
     width: 70%;
-    height: 30%;
+    height: 50%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
     
 }
 
 .logo{
-    width: 80%;
+    width: 95%;
 }
 
 p{
     font-size: 1.3rem;
     padding: 0 1rem;
+    font-family: 'Lato', sans-serif;
 }
 .play{
-    margin-top: 1rem;
     padding: 1vh 6vw;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
 }
 
-.footer{
-width: 100vw;
+.guillotine-wood{
+    padding: 0.5rem 0;
+    width: 100%;
+    height:100px;
+    background-color: var(--wood);
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .copyright{
     width: 90%;
-    margin: 1.5rem auto;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }

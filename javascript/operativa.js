@@ -40,11 +40,12 @@ function startDecapitator() {
 
     setTimeout(function () {
         let blade = document.getElementById("img-blade");
-        blade.style.top = "0%";
+        blade.style.top = "-6%";
 
         let head = document.getElementsByClassName("dead-head")[0];
         head.style.display = "block";
         makeSound("blade-sound");
+
 
         setTimeout(function () {
             blade.style.top = "-80%";

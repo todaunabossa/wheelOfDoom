@@ -7,20 +7,6 @@
     --white: #FFFFFF;
 }
 
-
-.guillotine {
-    margin: auto;
-    width: 90%;
-    position: relative; 
-    overflow: hidden;
-}
-
-.guillotine-img{
-    width: 100%;
-    position: relative;
-    
-}
-
 .guillotine-game {
     width: 80%;
     height: 100%;
@@ -32,15 +18,16 @@
 }
 
 .decapitate{
-    margin-top: 40%;
+    margin-top: 70%;
     width: 8rem;
     height: 8rem;
     font-size: 2rem;
-    border: none;
+    border: solid 1px black;
     background-color: var(--true-blod);
     color: var(--white);
     border-radius: 50%;
     z-index: 6;
+    animation: pulse 1s infinite;
     
     
 }
@@ -62,7 +49,7 @@ h2{
 width: 100%;
 font-size: 3rem;
 position: absolute;
-top: 50%;
+top: 55%;
 
 }
 
@@ -70,7 +57,7 @@ top: 50%;
 .head{
     position:absolute;
     width: 30%;
-    top: 76%;
+    top: 75%;
     left: 35%;
 
 }
@@ -78,7 +65,7 @@ top: 50%;
 .dead-head{
     position:absolute;
     width: 40%;
-    top: 83%;
+    top: 85%;
     left: 70%;
     z-index: 1;
     display: none;
@@ -86,13 +73,24 @@ top: 50%;
 }
 
 
-footer{
-    width: 100%;
-    
+.edit, .restart{
+    padding: 0.5rem 2.1rem;
+    font-size: 2rem;
+    margin: 1rem 0.7rem;
+    border: none;
+    background-color: var(--white);
+    border-radius: 0.5rem;
 }
 
-.edit, .restart{
-    padding: 0.5rem 2.5rem;
-    font-size: 1.5rem;
-    margin: 1rem 0.7rem;
-}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+   
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
