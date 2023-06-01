@@ -106,7 +106,6 @@ button#addNameBtn:hover {
 
     body {
         text-align: right;
-
     }
 }
 
@@ -117,8 +116,19 @@ button#addNameBtn:hover {
         opacity: 0.8;
     }
 
-    .modal-content {
+    input[type="text"] {
+      border: 1px solid gray;
+    }
+
+    .pop-up{
+        width: 45%;
+    }
+
+    .modal-content {        
+        justify-content: left;
+        margin-left: 0%;
         border-radius: 4px;
+        width: 80%;
         border: 2px solid rgb(250, 228, 196);
     }
 
