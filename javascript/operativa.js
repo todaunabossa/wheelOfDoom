@@ -22,17 +22,22 @@ function showDoomed() {
   let chosenName = arrayNames[random];
   makeSound("scream");
 
-  intervalId = setInterval(function() {
-    random = getRandomInt(arrayNames.length);
-    chosenName = arrayNames[random];
-    document.getElementById("chosed-one").innerHTML = chosenName;
-  }, 500);
+  if(arrayNames.length > 0){
+    intervalId = setInterval(function() {
+      random = getRandomInt(arrayNames.length);
+      chosenName = arrayNames[random];
+      document.getElementById("chosed-one").innerHTML = chosenName;
+    }, 500);
+  
+    setTimeout(function() {
+      clearInterval(intervalId);
+      document.getElementById("chosed-one").innerHTML = chosenName;
+      document.getElementById("dead-people").innerHTML = DeadBodies(random);
+    }, 2000);
+  } else {
+    alert("Vaya, has quedado sin nombres en tu lista");
+  }
 
-  setTimeout(function() {
-    clearInterval(intervalId);
-    document.getElementById("chosed-one").innerHTML = chosenName;
-    document.getElementById("dead-people").innerHTML = DeadBodies(random);
-  }, 2000);
 }
 
 const deadList = [];
@@ -54,6 +59,6 @@ function startDecapitator() {
     }, 4000);
 
   }, 3000);
-  
+
   showDoomed();
 }
