@@ -202,3 +202,37 @@ footer{
 
  
 }
+
+
+@media (min-width: 600px) {
+
+  #img-blade{
+    margin-top:36px;
+  }
+
+ 
+.decapitate{
+  align-items: center;
+  padding: 3%;
+  margin-top:20px;
+}
+  
+
+  footer{
+    justify-content: center;
+  }
+
+  .restart{
+    width: 100%;
+    background: white;
+  }
+
+  #addNameBtn{
+    border-radius: 0.5rem;
+  }
+
+  #newNameInput{
+    border-radius: 0.5rem;
+  }
+ 
+}

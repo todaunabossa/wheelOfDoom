@@ -1,7 +1,6 @@
-
 .container {
     text-align: left;
-  
+
 }
 
 button {
@@ -10,7 +9,7 @@ button {
 }
 
 .modal {
-    
+
     position: right;
     left: 0;
     top: 0;
@@ -29,7 +28,7 @@ button {
 }
 
 .close {
-    display:none;
+    display: none;
     color: red;
     justify-content: right;
     font-size: 40px;
@@ -45,9 +44,9 @@ button {
     cursor: pointer;
 }
 
-.name-card{
-font-size: 1.3rem;
-padding: 0.8rem;
+.name-card {
+    font-size: 1.3rem;
+    padding: 0.8rem;
 }
 
 input[type="text"] {
@@ -102,11 +101,25 @@ button#addNameBtn:hover {
 @media (max-width: 600px) {
     .close {
         display: inline-flex;
-       
+
     }
-    body{
+
+    body {
         text-align: right;
-        
+
     }
 }
 
+
+@media (min-width: 600px) {
+    button#addNameBtn:hover {
+        font-size: 1.5rem;
+        opacity: 0.8;
+    }
+
+    .modal-content {
+        border-radius: 4px;
+        border: 2px solid rgb(250, 228, 196);
+    }
+
+}
