@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url(/css/popup-names.css);
+@import url(/css/game-styles.css);
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     --bg-color: #FFF0E0;
@@ -16,67 +18,181 @@
     font-family: 'Jolly Lodger', cursive;
 }
 
-body{
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bg-color);
-  text-align: center;
-     
+body {
+    width: 100vw;
+    height: auto;
+    background-color: var(--bg-color);
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    margin: 0;
 }
 
-header{
-    width: 100vw;
+
+header {
+    width: 100%;
     background-color: var(--wood);
-    height: 6vh;
+    min-height: 60px;
+    max-height: 40vh;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 
 .guillotine {
-    margin: auto;
-    width: 90%;
+    margin: 0 auto;
     position: relative;
-    
-    
+    width: 250px;
+    height: 480px;
+
 }
 
-.guillotine-img{
+.guillotine-img {
+    position: absolute;
     width: 100%;
-    position: relative;
-    
+    left: 0%
 }
 
 
 
 .guillotine-text {
-    width: 70%;
-    height: 30%;
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    
-}
-
-.logo{
     width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 10%
 }
 
-p{
-    font-size: 1.3rem;
-    padding: 0 1rem;
-}
-.play{
-    margin-top: 1rem;
-    padding: 1vh 6vw;
-    font-size: 1.5rem;
-}
-
-.footer{
-width: 100vw;
-}
-
-.copyright{
+.logo {
     width: 90%;
-    margin: 1.5rem auto;
-    font-size: 1.2rem;
+    max-width: 100%;
+}
+
+p {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.play {
+    font-size: 1.5rem;
+    padding: 0.3rem 1.5rem;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.instructions{
+    padding: 5rem;
+}
+
+footer {
+  
+    width: 100%;
+    height: 30vh;
+    background-color: var(--wood);
     text-align: center;
+}
+
+
+
+
+.copyright {
+    color: var(--white);
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    text-justify: center;
+}
+
+
+@media (max-width: 600px) {
+
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        margin: 0;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+    }
+
+    main{
+        height: auto;
+    }
+
+    .guillotine {
+        width: 90%;
+        height: 80vh;
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .guillotine-img {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .guillotine-text {
+        top: 25%;
+        left: 10%;   
+    }
+
+    footer {
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        background-color: var(--wood);
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .play {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .instructions {
+        display: none;
+    }
+
+    h2{
+        display: flex;
+        margin-left: 50%;
+    }
+
+    
 }

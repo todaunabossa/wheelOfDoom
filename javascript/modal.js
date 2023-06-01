@@ -9,10 +9,11 @@ let addNameBtn = document.getElementById("addNameBtn");
 let startagain = document.getElementById("restartgame");
 
 
+let isDesktop = window.innerWidth > 600;
 
 function openModal() {
-    modal.style.display = "block";
-    displayNames();
+modal.style.display = "block";
+displayNames();
 }
 
 function hideModal() {
