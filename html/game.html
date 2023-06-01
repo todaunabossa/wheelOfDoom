@@ -28,7 +28,7 @@
                 <button onclick="startDecapitator()" class="decapitate">Decapitar</button>
                 <h2 id="chosed-one">?</h2>
                 <img class="head" src="/img/head.svg" alt="Cabeza lista para que la corte la guillotina">
-                <img class="dead-head" src="/img/dead-head.svg"
+                <img class="dead-head" src="/img/head-and-blood.png"
                     alt="Cabeza con sangre después de que la cortara la guillotina">
             </div>
 
@@ -38,9 +38,25 @@
                 <source src="/sounds/scream.mp3" type="audio/wav"> </audio>
 
         </section>
+
+        <section class="pop-up">
+       
+        
+        <div id="modal" class="modal-desktop">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+               
+                <div id="nameContainer"></div>
+                <input type="text" id="newNameInput" placeholder="Esribe un nombre">
+                <button id="addNameBtn">Añade a tu víctima +</button>
+            </div>
+        </div>
+    </section>
+
+       
     </main>
     
-    <div id="modal" class="modal">
+   <!-- <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
            
@@ -48,23 +64,23 @@
             <input type="text" id="newNameInput" placeholder="Esribe un nombre">
             <button id="addNameBtn">Añade a tu víctima +</button>
         </div>
-    </div>
+    </div> -->
 
-    <footer>
-    <div class="guillotine-wood">
-        <button class="edit" id="openModalBtn">Editar Lista</button>
-        <button class="restart">Reiniciar</button>
-    </div>
-       
+   
+ 
+    <footer> 
+        <div class="guillotine-buttons">
+            <button class="edit" id="openModalBtn">Editar Lista</button>
+            <button onclick="reStart()" class="restart">Reiniciar</button>
+        </div>
+   
     </footer>
-
-    
-
-        
 
         <script src="/javascript/arrayNames.js"></script>
         <script src="/javascript/operativa.js"></script>
         <script src="/javascript/modal.js"></script>
+        <script src="/javascript/restart.js"></script>
+
 
 </body>
 

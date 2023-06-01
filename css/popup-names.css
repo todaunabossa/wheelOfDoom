@@ -5,35 +5,35 @@
 }
 
 button {
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 20px;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
+    
+    position: right;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 40%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 50;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 20% auto;
-    padding: 20px;
+    margin: 10% auto;
+    padding: 10px;
     border: 1px solid #888;
     width: 80%;
 }
 
 .close {
-    color: #6c6b6b;
-    justify-content: left;
-    font-size: 28px;
+    display:none;
+    color: red;
+    justify-content: right;
+    font-size: 40px;
+    margin-right: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -46,11 +46,12 @@ button {
 }
 
 .name-card{
-font-size: 1.5rem;
+font-size: 1.3rem;
+padding: 0.8rem;
 }
 
 input[type="text"] {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -97,3 +98,15 @@ button#addNameBtn:hover {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .close {
+        display: inline-flex;
+       
+    }
+    body{
+        text-align: right;
+        
+    }
+}
+

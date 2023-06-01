@@ -7,11 +7,18 @@ let nameContainer = document.getElementById("nameContainer");
 let newNameInput = document.getElementById("newNameInput");
 let addNameBtn = document.getElementById("addNameBtn");
 
+let isDesktop = window.innerWidth > 600;
 
 function openModal() {
-    modal.style.display = "block";
-    displayNames();
+modal.style.display = "block";
+displayNames();
 }
+// function openModal() {
+// if (isDesktop || modal.style.display === "block") {
+//     return; // No hacer nada en la versión móvil si el modal ya está oculto
+// }
+// modal.style.display = "none";
+// }
 
 function hideModal() {
     modal.style.display = "none";}

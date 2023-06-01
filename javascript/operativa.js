@@ -1,5 +1,6 @@
 "use strict"
 
+let intervalId;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -19,45 +20,50 @@ function DeadBodies(random) {
 
 }
 
-
 function showDoomed() {
-
-    let random = getRandomInt(arrayNames.length)
-
+    let random = getRandomInt(arrayNames.length);
     let chosenName = arrayNames[random];
-
     makeSound("scream");
-
-    document.getElementById("chosed-one").innerHTML = chosenName;
-    document.getElementById("dead-people").innerHTML = DeadBodies(random);
-
-
-}
-
-const deadList = [];
-
-function startDecapitator() {
-
-    setTimeout(function () {
-        let blade = document.getElementById("img-blade");
-        blade.style.top = "-6%";
-
-        let head = document.getElementsByClassName("dead-head")[0];
-        head.style.display = "block";
-        makeSound("blade-sound");
-
-
-        setTimeout(function () {
-            blade.style.top = "-80%";
-
-            let newHead = document.getElementsByClassName("dead-head")[0];
-            newHead.style.display = "none";
-
-        }, 3000);
-
-    }, 2000);
-
+  
+    if(arrayNames.length > 0){
+      intervalId = setInterval(function() {
+        random = getRandomInt(arrayNames.length);
+        chosenName = arrayNames[random];
+        document.getElementById("chosed-one").innerHTML = chosenName;
+      }, 500);
+    
+      setTimeout(function() {
+        clearInterval(intervalId);
+        document.getElementById("chosed-one").innerHTML = chosenName;
+        document.getElementById("dead-people").innerHTML = DeadBodies(random);
+      }, 2000);
+    } else {
+      alert("Vaya, has quedado sin nombres en tu lista");
+    }
+  
+  
+  }
+  
+  const deadList = [];
+  
+  function startDecapitator() {
+    setTimeout(function() {
+      let blade = document.getElementById("img-blade");
+      blade.style.top = "-34%";
+  
+      let head = document.getElementsByClassName
+  ("dead-head")[0];
+      head.style.display = "block";
+      makeSound("blade-sound");
+  
+      setTimeout(function() {
+        blade.style.top = "-110%";
+  
+        let newHead = document.getElementsByClassName("dead-head")[0];
+        newHead.style.display = "none";
+      }, 4000);
+  
+    }, 3000);
+  
     showDoomed();
-
-
-}
+  }
