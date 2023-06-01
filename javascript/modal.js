@@ -24,6 +24,8 @@ function displayNames() {
         let nameCard = document.createElement("div");
         nameCard.classList.add("name-card");
 
+        nameCard.setAttribute("data-index", i);
+
         let nameText = document.createElement("span");
         nameText.innerText = arrayNames[i];
 
@@ -50,8 +52,18 @@ function addName() {
 
 function deleteName(index) {
     arrayNames.splice(index, 1);
+    removeNameCard(index);
     displayNames();
 }
+
+function removeNameCard(index) {
+    let nameCards = document.getElementsByClassName("name-card");
+    if (index >= 0 && index < nameCards.length) {
+        setTimeout(function() {
+            nameCards[index].style.display = "none";
+          }, 1000); 
+        }
+      }
 
 openModalBtn.addEventListener("click", openModal);
 closeModal.addEventListener("click", hideModal);

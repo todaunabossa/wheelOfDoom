@@ -31,6 +31,11 @@ function showDoomed() {
         chosenName = arrayNames[random];
         document.getElementById("chosed-one").innerHTML = chosenName;
       }, 500);
+
+      setTimeout(function() {
+      let index = arrayNames.indexOf(chosenName);
+      removeNameCard(index);
+    }, 2000);
     
       setTimeout(function() {
         clearInterval(intervalId);
