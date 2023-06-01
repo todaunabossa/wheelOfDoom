@@ -66,4 +66,4 @@ function showDoomed() {
     }, 3000);
   
     showDoomed();
-  }
+  }  
