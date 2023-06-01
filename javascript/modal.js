@@ -13,12 +13,6 @@ function openModal() {
 modal.style.display = "block";
 displayNames();
 }
-// function openModal() {
-// if (isDesktop || modal.style.display === "block") {
-//     return; // No hacer nada en la versión móvil si el modal ya está oculto
-// }
-// modal.style.display = "none";
-// }
 
 function hideModal() {
     modal.style.display = "none";}
