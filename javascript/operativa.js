@@ -35,8 +35,7 @@ function showDoomed() {
     }, 500);
 
     setTimeout(function () {
-      //let index = arrayNames.indexOf(chosenName);
-      removeNameCard(random);
+      removeNameCard(index);
     }, 2000);
 
     setTimeout(function () {
