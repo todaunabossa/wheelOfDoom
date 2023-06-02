@@ -14,6 +14,19 @@ describe('getRandomInt', () => {
   });
 });
 
+describe('deadBodies', () => {
+  test('should return the removed element from the array', () => {
+    // Arrange
+    const array = ['genesis', 'rafa', 'sylvia', 'neema', 'gigi'];
+    const num = 2;
+    const expected = ['sylvia'];
+
+    const result = deadBodies(array, num);
+
+    expect(result).toEqual(expected);
+    expect(array).not.toContain('sylvia'); 
+  });
+});
 
 describe('newArrayOfDead', () => {
   test('should add an element to the deadList array', () => {
@@ -39,17 +52,5 @@ describe('newArrayOfDead', () => {
 });
 
 
-describe('deadBodies', () => {
-  test('should return the removed element from the array', () => {
-    // Arrange
-    const array = ['genesis', 'rafa', 'sylvia', 'neema', 'gigi'];
-    const num = 2;
-    const expected = ['sylvia'];
 
-    const result = deadBodies(array, num);
-
-    expect(result).toEqual(expected);
-    expect(array).not.toContain('sylvia'); 
-  });
-});
 
