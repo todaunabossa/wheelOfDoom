@@ -35,13 +35,13 @@ function showDoomed() {
     }, 500);
 
     setTimeout(function () {
-      removeNameCard(index);
+      removeNameCard(random);
     }, 2000);
 
     setTimeout(function () {
       clearInterval(intervalId);
       document.getElementById("chosed-one").innerHTML = chosenName;
-      console.log(chosenName);
+    
       document.getElementById("dead-people").innerHTML = deadBodies(arrayNames, random);
     }, 2000);
 
