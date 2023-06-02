@@ -1,6 +1,6 @@
 "use strict"
 
-const { getRandomInt, deadBodies, newArrayOfDead } = require('./operativa');
+const { getRandomInt, deadBodies, newArrayOfDead } = require('../javascript/operativa');
 
 describe('getRandomInt', () => {
   test('should return an integer between 0 and max -an integer > 0 passed as a parameter-', () => {
