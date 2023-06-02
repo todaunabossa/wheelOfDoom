@@ -5,11 +5,10 @@ function reStart() {
         if (question) {
             arrayNames.length = 0;
             nameContainer.innerHTML = "";
+            document.getElementById("chosed-one").innerHTML = " ";
             openModal();
 
-} else {
+} 
 
-    alert("Nada se ha modificado, puedes seguir jugando")
 
-}
 };

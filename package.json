@@ -1,0 +1,15 @@
+{
+  "name": "wod",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/todaunabossa/wheelOfDoom/assets/125391542/0f34989a-4b0a-4a07-8351-430fd85fd1ee)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
